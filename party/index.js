@@ -1,6 +1,6 @@
 (function () {
     // https://dashboard.emailjs.com/admin/account
-    emailjs.init('JFFuE1su-rEaMkj8w');
+    //emailjs.init('XXXXXXXXX');
 })();
 function getPrice(q) {
     let shop = 100
@@ -17,13 +17,13 @@ function sendEmail() {
     console.log(templateParams)
 
     emailjs.send('service_90ageyj', 'template_f6pbzvg', templateParams)
-        .then(function (response) { 
+        .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
         }, function (error) {
             console.log('FAILED...', error);
         });
 }
 
-$('#button-addon2').on('click',function(){
+$('#button-addon2').on('click', function () {
     sendEmail()
 })
