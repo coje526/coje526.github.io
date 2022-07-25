@@ -80,6 +80,20 @@ layout / Grid Design
     }
 }
 
+@media only screen and (max-width: 963px) {
+    .col-md-3.col-sm-6 {
+        margin-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 446px) {
+    .col-md-3.col-sm-6 {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 20px;
+    }
+}
 
 
 /***********
@@ -429,6 +443,8 @@ Clients
 .clients {
     background: #192a56;
 }
+
+
 
 
 
