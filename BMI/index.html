@@ -21,13 +21,13 @@
         <div class="input-section height">
             <label for="height">
                 <span class="input-title">身高 cm</span>
-                <input type="text" id="height" class="input-style" placeholder="請輸入身高" required>
+                <input type="number" oninput="value=value.replaceAll('-', ''); value>200 ? value=200 : value < 120 ? value=120 : value" id="height" class="input-style" placeholder="請輸入身高" required>
             </label>
         </div>
         <div class="input-section weight">
             <label for="weight">
                 <span class="input-title">體重 kg</span>
-                <input type="text" id="weight" class="input-style" placeholder="請輸入體重" required>
+                <input type="number" oninput="value=value.replaceAll('-', ''); value>200 ? value=200 : value < 20 ? value = 20 : value" id="weight" class="input-style" placeholder="請輸入體重" required>
             </label>
         </div>
         <a href="javascript:;" class="calculation">看結果</a>
